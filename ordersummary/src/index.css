@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: "RedHat";
+    src: url("../public/RedHatDisplay-VariableFont_wght.ttf");
+}
+
+body {
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "RedHat";
+    background-image: url("./images/pattern-background-mobile.svg");
+    background-size: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: #dde5fe;
+}
+
+@media screen and (min-width: 1200px) {
+
+    body {
+        background-image: url("./images/pattern-background-desktop.svg");
+            background-position: top;
+            background-repeat: no-repeat;
+            background-color: #dde5fe;
+            background-size: 100%;
+    }
+}
